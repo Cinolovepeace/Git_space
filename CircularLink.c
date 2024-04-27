@@ -99,7 +99,7 @@ bool CircLList_HeadInsert(CircLList_t *Head, DataType_t data)
 			break;
 		}
 	}
-	New->next = Head->next;//改动
+	New->next = Head->next; // 改动
 	Head->next = New;
 	Phead->next = New;
 
@@ -276,8 +276,8 @@ int main(int argc, char const *argv[])
 	CircLList_HeadInsert(phe, 20);
 	CircLList_HeadInsert(phe, 10);
 	CircLList_TailInsert(phe, 50);
-	 CircLList_DestInsert(phe,30,40);
-	//CircLList_HeadDel(phe);
+	CircLList_DestInsert(phe, 30, 40);
+	// CircLList_HeadDel(phe);
 	CircLList_Print(phe);
 	return 0;
 }
